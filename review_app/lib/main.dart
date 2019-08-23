@@ -6,6 +6,7 @@ import 'demo/basic_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
+import 'demo/navigator_demo.dart';
 
 void main() => runApp(App());
 
@@ -25,7 +26,13 @@ class App extends StatelessWidget {
             0.5,
           ),
           splashColor: Colors.white70),
+
       home: Home(),
+      // initialRoute: "/about",
+      // routes: {
+      //   "/":(context)=>NavigatorDemo(),
+      //   "/about":(context)=>Page(title: "About",)
+      // },
     );
   }
 }
