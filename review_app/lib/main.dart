@@ -7,6 +7,7 @@ import 'demo/layout_demo.dart';
 import 'demo/view_demo.dart';
 import 'demo/sliver_demo.dart';
 import 'demo/navigator_demo.dart';
+import 'demo/form_demo.dart';
 
 void main() => runApp(App());
 
@@ -27,12 +28,13 @@ class App extends StatelessWidget {
           ),
           splashColor: Colors.white70),
 
-      home: Home(),
-      // initialRoute: "/about",
-      // routes: {
-      //   "/":(context)=>NavigatorDemo(),
-      //   "/about":(context)=>Page(title: "About",)
-      // },
+      // home: Home(),
+      initialRoute: "/form",
+      routes: {
+        "/":(context)=>NavigatorDemo(),
+        "/about":(context)=>Page(title: "About",),
+        "/form":(context) => FormDemo(),
+      },
     );
   }
 }

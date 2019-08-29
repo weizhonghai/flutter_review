@@ -7,10 +7,11 @@ class BasicDemo extends StatelessWidget {
     
     return Container(
       color: Colors.grey[100],
-      // padding: ,
-      // height: ,
-      // decoration: ,
-      // child: ,
+      child: Row(
+        children: <Widget>[
+          Icon(Icons.subject)
+        ],
+      ),
     );
   }
 }
